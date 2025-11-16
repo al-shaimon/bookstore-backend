@@ -18,9 +18,8 @@ app.use(
 
       // Allow all subdomains of alshaimon.com
       const allowedDomains = [
-        /\.alshaimon\.com$/, // Any subdomain of alshaimon.com
-        /^https?:\/\/alshaimon\.com$/, // Main domain
         /^http:\/\/localhost:\d+$/, // Localhost for development
+        /^https:\/\/bookstore-react-seven\.vercel\.app$/, // Vercel deployment
       ];
 
       const isAllowed = allowedDomains.some((pattern) => pattern.test(origin));
